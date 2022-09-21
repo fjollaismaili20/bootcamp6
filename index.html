@@ -41,6 +41,8 @@
                   the foreword written by Dorie Greenspan. I, unsurprisingly, immediately fell in love with my newest cookbook. It’s a collection of 100 <br>
               foolproof and classic desserts including cookies, cakes, muffins, pies, tarts, and more that range from simple everyday cookies to <br>
               outrageously indulgent chocolate soufflé cake.</p>
+
+
          
            <h3>Ingredients</h3>
             <ul>
@@ -87,5 +89,95 @@
 
         </dl>
     </table>
+
+    <fieldset>
+      <legend>Make Your Order!</legend>
+         
+      
+
+      <form method="get">
+        <h3>Choose your cake</h3>
+        <input type="radio" name="cake"
+         value="Choco Tiramisu" id="chocotiramisu" />
+         <label for="chocotiramisu">Choco Tiramisu</label>
+         <br>
+         <input type="radio" name="cake"
+         value="Caramel Tiramisu" id="carameltiramisu" />
+         
+         <label for="carameltiramisu">Caramel Tiramisu</label>
+
+         <br>
+         <input type="radio" name="cake"
+         value="Vanilla Tiramisu" id="vanillatiramisu" />
+         <label for="vanillatiramisu">Vanilla Tiramisu</label>
+          
+         <h3>Choose shape</h3>
+         <input type="checkbox" name="shape"
+         value="Regular" id="regular" />
+         <label for="regular">Regular</label>
+         <br>
+         <input type="checkbox" name="shape"
+         value="Circle" id="circle" />
+         
+         <label for="checkbox">Circle</label>
+
+         <br>
+         <input type="checkbox" name="shape"
+         value="Special" id="special" />
+         <label for="special">Special</label>
+
+          <br>
+          <br/>
+          <label for="serving">Number of servings</label>
+          <br>
+          <input type="number" name="numerofserving" id="servenum" >
+        
+        <br>
+        <br>
+
+        <label>Special Request</label>
+        <br>
+        <br>
+        <textarea  name="message" id="message" placeholder=""
+         cols="45" rows="5" ></textarea>
+         <br> <br>
+
+         <label for="file_upload">Photo of the cake</label>
+         <br>
+         <input  type="file" id="file_upload" name="file_upload"><br><br>
+        
+        <br> <br>
+
+        <label>Name</label>
+        <br>
+         <input  type="text" placeholder="First Name" id="firstname" name="fisrtname" value="" required>
+         <input  type="text" placeholder="Last Name" id="lastname" name="lastname" value="" required>
+          <br>
+         <br>
+         <label>Email</label>
+         <br>
+         <input  type="email" placeholder="example@gmail.com" id="email" name="email" value="" required>
+            
+         <br> <br>
+
+         <label>Address</label> <br>
+         <input  type="text" placeholder="Street Address" id="street" name="street" value="" required> <br> <br>
+         <input  type="text" placeholder="city" id="city" name="city" value="" required>
+         <input  type="text" placeholder="State" id="state" name="state"  value="" required > <br> <br>
+         <input  type="text" placeholder="Postal/Zip Code" id="postal" name="postal" value="" required> <br><br>
+
+          <label>Phone Number</label> <br>
+
+          <input type="tel" placeholder="Area Code" id="areanumber" name="areanumber" value=""  maxlength="3" required>
+          <input  type="tel" placeholder="Phone Number" id="phonemuber" name="phonenumber" value="" maxlength="8" required> <br><br>
+            
+
+          <label>Date required</label> <br>
+          <input type="datetime-local" id="date" name="date" value="" required> <br> <br>
+
+          <input type="submit" value="Submit" >
+        </form>
+
+    </fieldset>
             </body>
 </html>
