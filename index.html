@@ -10,24 +10,24 @@
 <body  >
   <div class="wrapper"> 
      
-    <table  width="900" align="center">
+    <table   width="900" align="center">
         <tr>
             <td>
                 <table  width="100%">
                     <tr>
                         <td>
-                            <h1>Tiramisu</h1>
+                            <h1 id="tittle">Tiramisu</h1>
                             <p>
-                                Posted on <em>June 13, 2019</em> / posted in <a href="#">No-Bake Recipes</a>
+                                Posted on <em>June 13, 2019</em> / posted in <a href="#" class="link">No-Bake Recipes</a>
                             </p>
                         </td>
                         <td align="right">
-                            <a href="https://amazon.com">Buy on Amazon!</a>
+                            <a href="https://amazon.com" class="link">Buy on Amazon!</a>
                         </td>
                     </tr>
                 </table>
   
-   <table  >
+   <table class="m-10" >
  
     <tr>
       <td><img src="./assets/img/s1.jpg " width="300"></td>
@@ -43,9 +43,9 @@
      
         <p>A couple months ago, I was sent a new cookbook called Happiness is Baking. This cookbook includes Maida Heatter’s favorite recipes with the foreword written by Dorie Greenspan. I, unsurprisingly, immediately fell in love with my newest cookbook. It’s a collection of 100 foolproof and classic desserts including cookies, cakes, muffins, pies, tarts, and more that range from simple everyday cookies to outrageously indulgent chocolate soufflé cake.</p>
 
-         
+            <form class="border pd-10">
            <h3>Ingredients</h3>
-            <ul>
+            <ul >
                
                 <li>1 and 1/4 cups (300ml) very strongly prepared espresso, warm or room temperature</li>
                 <li>6 Tablespoons (90ml) Grand Marnier*</li>
@@ -59,6 +59,7 @@
                 <li>1/8 teaspoon salt</li>
                 <li>unsweetened natural or dutch-process cocoa powder</li>
               </ul>
+            </form>
             <p>For those not familiar, Maida Heatter is an icon, especially in the baking world. Dubbed the Queen of Cake, her expansive culinary career included 9 cookbooks, recipes for the Times, a restaurant, and three James Beard Awards. Baker and author Dorie Greenspan once said “Whenever someone tells me they want to learn to bake, I tell them to start with Maida Heatter’s books. That’s what I did.” This latest  cookbook is a testament to Maida’s legacy. She passed away only 2 months after this book was published. She leaves behind an incalculable amount of inspiration to bakers and cooks all over the world.
             </p>
              <br/>
@@ -106,41 +107,45 @@
     </td>
     </table>
        
+    <h3>Make your Order!</h3>
     <!--Order Form-->
-    <form class="order" method="get">
-    <fieldset>
-      <legend>Make Your Order!</legend>
-         
-        <h3 >Choose your cake</h3>
-        <input type="radio" name="cake"
-         value="Choco Tiramisu" id="chocotiramisu" />
-         <label for="chocotiramisu">Choco Tiramisu</label>
-         <br>
-         <input type="radio" name="cake"
-         value="Caramel Tiramisu" id="carameltiramisu" />
-         
-         <label for="carameltiramisu">Caramel Tiramisu</label>
+    <form class="border pd-10 bg-dgray " method="get">
+      <div class="first-section">
 
-         <br>
-         <input type="radio" name="cake"
-         value="Vanilla Tiramisu" id="vanillatiramisu" />
-         <label for="vanillatiramisu">Vanilla Tiramisu</label>
-          <div class="checkbox">
-         <h3>Choose shape</h3>
-         <input type="checkbox" name="shape"
-         value="Regular" id="regular" />
-         <label for="regular">Regular</label>
-         <br>
-         <input type="checkbox" name="shape"
-         value="Circle" id="circle" />
-         
-         <label for="checkbox">Circle</label>
-
-         <br>
-         <input type="checkbox" name="shape"
-         value="Special" id="special" />
-         <label for="special">Special</label>
-    </div>
+          <div class="choose-cake m-r-50 m-w-250">
+            <h3 >Choose your cake</h3>
+            <input type="radio" name="cake"
+            value="Choco Tiramisu" id="chocotiramisu" />
+            <label for="chocotiramisu">Choco Tiramisu</label>
+            <br>
+            <input type="radio" name="cake"
+            value="Caramel Tiramisu" id="carameltiramisu" />
+            
+            <label for="carameltiramisu">Caramel Tiramisu</label>
+    
+            <br>
+            <input type="radio" name="cake"
+            value="Vanilla Tiramisu" id="vanillatiramisu" />
+            <label for="vanillatiramisu">Vanilla Tiramisu</label>
+    
+          </div>
+              <div class="checkbox m-w-250">
+            <h3>Choose shape</h3>
+            <input type="checkbox" name="shape"
+            value="Regular" id="regular" />
+            <label for="regular">Regular</label>
+            <br>
+            <input type="checkbox" name="shape"
+            value="Circle" id="circle" />
+            
+            <label for="checkbox">Circle</label>
+    
+            <br>
+            <input type="checkbox" name="shape"
+            value="Special" id="special" />
+            <label for="special">Special</label>
+        </div>
+      </div>
           <br>
           <br/>
           <label for="serving">Number of servings</label>
@@ -189,10 +194,9 @@
           <label>Date required</label> <br>
           <input type="datetime-local" id="date" name="date" value="" required> <br> <br>
 
-          <input type="submit" value="Submit" >
+          <input type="submit" value="Submit" class="button" >
        
 
-    </fieldset>
   </form>
     <br> <br>
 
