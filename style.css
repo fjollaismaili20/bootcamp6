@@ -1,15 +1,31 @@
+@import  './variables.css';
+
+@font-face{
+  font-family: OpenSans;
+  src: url(./fonts/OpenSans-Regular.ttf);
+}
+
+
+*{
+  font-family: OpenSans;
+}
+
+
 body {
   padding: 0;
   margin: 0;
+  
 }
 
 .wrapper{
-  background-color:lightgrey;
+  background-color:var(--bg);
 ;
 }
 
 .border {
-  border: 2px dotted black;
+  border: var(--border);
+  
+box-shadow: var(--b-sh);
 }
 
 .pd-10{
@@ -28,16 +44,18 @@ body {
 }
 
 #tittle{
-  color: darkgray;
+  color: rgb(199, 35, 35);
 }
 
 .link:hover{
   color: red;
+  transition: all 0.3s;
 }
 
 .link{
  font-weight: bold;
 }
+
 
 .m-r-50 {
   margin-right: 50px;
@@ -63,3 +81,33 @@ body {
   background-color: rgb(198, 198, 198);
   color: #000;
 } 
+
+
+ul {
+  background-color: darkgray;
+}
+
+ul {
+list-style-type: '🍰  '
+}
+
+.form-with-image {
+  display: flex;
+}
+
+.skew {
+  transform: skew(336deg, 358deg);
+  margin: 40px 0;
+  width: 100%;
+}
+
+.ingredients-img {
+  width: 60%;
+  margin: auto;
+  margin-left: -50px;
+}
+
+.ingredients-img img {
+  width: 100%;
+}
+
